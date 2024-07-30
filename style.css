@@ -66,7 +66,7 @@ li{
 }
 .section-padding{
   /* padding-top: 70px; */
-  margin-top: 70px;
+  margin-top: 70px !important;
 }
 #mobile_slide{
   position: relative;
@@ -2766,3 +2766,115 @@ p.prev_rate {
   display: flex;
 }
 /* ////////////////////////Recipie section Ends////////////////// */
+
+
+/* ////////////////////////Numbers that matters STARTS////////////////// */
+.numbs-main {
+  width: 100%;
+  min-height: 380px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.numbs-service {
+  background: #ffe099;
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  box-shadow: 0 0 20px -15px #030380;
+  transition: transform .8s;
+}
+
+.numbs-service-logo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: -90px auto 0;
+  background: #fff;
+  border: 18px solid #e6ac26;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbs-service h4 {
+  height: 35px;
+  width: 80%;
+  margin: 50px auto;
+  background: #fff;
+  position: relative;
+}
+
+.numbs-service h4::after,
+.numbs-service h4::before {
+  content: '';
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  z-index: -1;
+}
+
+.numbs-service h4::after {
+  background: linear-gradient(#edfb24, #d71828);
+  right: -5px;
+  top: -5px;
+}
+
+.numbs-service h4::before {
+  background: linear-gradient(#edfb24, #d71828);
+  left: -5px;
+  bottom: -5px;
+}
+
+.numbs-main::after {
+  content: '';
+  height: 200px;
+  width: 80%;
+  background: #ffdb89;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+  left: 10%;
+  z-index: -1;
+  box-shadow: 0 0 20px -15px #030380;
+  transition: transform .8s;
+}
+
+.numbs-main::before {
+  content: '';
+  height: 200px;
+  width: 64%;
+  background: #ffdb89;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0;
+  left: 18%;
+  z-index: -2;
+}
+
+.numbs-main:hover .numbs-service {
+  transform: translateY(-50px);
+}
+
+.numbs-main:hover::after {
+  transform: translateY(-25px);
+}
+
+.numbs-service-logo img {
+  transition: transform 1s;
+}
+
+.numbs-main:hover .numbs-service-logo img {
+  transform: rotate(360deg);
+}
+/* ////////////////////////R&D  that matters Ends////////////////// */
+.lc-block.mb-4 {
+ 
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 35px rgb(0 0 0 / 13%);
+}
