@@ -463,7 +463,132 @@ margin-left: 50px;
   <!-- ADVERTISERS SERVICE CARD ENDED -->
 
   <!-- //////////////////////numbers That MAtters STARRTS/////////////////////////////// -->
+  
+  
+    
+<script defer="" src="https://unpkg.com/vanilla-counter" onload="initializeCounterRANDOMID()"></script>
+<!-- check info at https://github.com/yunisdev/vanilla-counter -->
+
+<script>
+ function initializeCounterRANDOMID(){
+
+   const observer = new IntersectionObserver(function(entries, observer){
+       entries.forEach(entry => {
+           //console.log(entry);
+            VanillaCounter();
+       });
+   }, {});
+   
+   observer.observe(document.querySelector('.counter-RANDOMID'));
+}
+</script>
+
+<!-- lc-needs-hard-refresh -->
+<div class="container py-6">
+	<div class="row align-items-center">
+		<div class="col-xl-6">
+			<div class="lc-block mb-3">
+				<div editable="rich">
+					<h2 class="fw-bold display-5">Our Company Numbers</h2>
+				</div>
+			</div>
+			<div class="lc-block mb-3">
+				<div editable="rich">
+					<p class="fw-light rfs-11">Marketing for Small, Medium or Large Businesses.<br>Exceed Your Marketing Goals with us.<br></p>
+				</div>
+			</div>
+			<div class="lc-block">
+				<div editable="rich">
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat. In pellentesque scelerisque auctor. Ut porta lacus eget nisi fermentum lobortis.</p>
+				</div>
+			</div>
+		</div>
+		<!-- /col -->
+		<div class="col-xl-6 row row-cols-1 row-cols-md-2 g-3 counter-RANDOMID">
+			<div class="col">
+				<div class="card card-body shadow border-0 shadow border-0">
+					<div class="d-inline-flex align-items-center" style="min-height:196px">
+						<div class="me-2">
+							<div class="bg-light p-4 rounded-circle">
+								<img width="80%" src="https://cdn-icons-png.flaticon.com/128/9279/9279555.png" alt="">
+							</div>
+						</div>
+						<div>
+							<span class="fw-bold display-5 mb-5" data-vanilla-counter="" data-start-at="0" data-end-at="1000" data-time="1000" data-delay="60" data-format="{}"> </span>
+                            <p>+</p>
+							<p class="lead" editable="inline"><span class=""><b>Distributors</b></span> Done</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card card-body shadow border-0">
+					<div class="d-inline-flex align-items-center" style="min-height:196px">
+						<div class="me-2">
+							<div class="bg-light p-4 rounded-circle">
+								<img width="80%" src="https://cdn-icons-png.flaticon.com/128/7845/7845682.png" alt="">
+							</div>
+						</div>
+						<div>
+							<span class="fw-bold display-5 mb-5" data-vanilla-counter="" data-start-at="0" data-end-at="2.5" data-time="1000" data-delay="60" data-format="{}">Lac +</span><p>Lac +</p>
+							<p class="lead" editable="inline"><b>Wholesale</b> Retailers</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card card-body shadow border-0">
+					<div class="d-inline-flex align-items-center" style="min-height:196px">
+						<div class="me-2">
+							<div class="bg-light p-4 rounded-circle">
+								<img width="80%" src="https://cdn-icons-png.flaticon.com/128/3201/3201521.png" alt="">
+							</div>
+						</div>
+						<div>
+							<span class="fw-bold display-5 mb-5" data-vanilla-counter="" data-start-at="0" data-end-at="15" data-time="1000" data-delay="60" data-format="{}"> </span>
+                            <p>cr+</p>
+							<p class="lead" editable="inline"><b>Happy</b> Customers</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card card-body shadow border-0">
+					<div class="d-inline-flex align-items-center" style="min-height:196px">
+						<div class="me-2">
+							<div class="bg-light p-4 rounded-circle">
+								<img width="80%" src="https://cdn-icons-png.flaticon.com/128/8147/8147969.png" alt="">
+							</div>
+						</div>
+						<div>
+							<span class="fw-bold display-5 mb-5" data-vanilla-counter="" data-start-at="0" data-end-at="65" data-time="1000" data-delay="0" data-format="{}"> </span>
+							<p class="lead" editable="inline"><b>Years</b> of Excellence</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col" style="width: 100%;">
+				<div class="card card-body shadow border-0">
+					<div class="d-inline-flex align-items-center" style="min-height:196px">
+						<div class="me-2">
+							<div class="bg-light p-4 rounded-circle">
+								<img width="80%" src="https://cdn-icons-png.flaticon.com/128/10857/10857085.png" alt="">
+							</div>
+						</div>
+						<div>
+							<span class="fw-bold display-5 mb-5" data-vanilla-counter="" data-start-at="0" data-end-at="800" data-time="1000" data-delay="0" data-format="{}"> </span>
+                            <p class="display-5">+</p>
+							<p class="lead" editable="inline"><b>Employees</b></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
  
+ 
+  
   <div class="container section-padding">
     <div class="row">
         <div class="col-lg-12">
